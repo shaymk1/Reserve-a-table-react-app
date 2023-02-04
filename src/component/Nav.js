@@ -1,30 +1,63 @@
 import React from "react";
+// import Image from "../images/logo.png";
+// import ProfilePicture from "./Images/Profile_picture.jpeg";
 import { BsCartFill } from "react-icons/bs";
 
 const Nav = () => {
 	return (
 		<>
 			<header>
-				<div>
-					<img src="../images/logo.png" alt="little lemon logo " srcset="" />
-				</div>
+				<nav className="nav">
+					<div className="logo-container">
+						<a href="#Home">
+							<img
+								src={require("../images/logo.png")}
+								alt="little lemon logo "
+								srcset=""
+								className="logo"
+							/>
+						</a>
+					</div>
 
-				<nav>
-					<ul>
-						<li>
-							<a href="#Home">Home</a>
-							<a href="#Home">About</a>
-							<a href="#Home">Menu</a>
-							<a href="#Home">Reservations</a>
-							<a href="#Home">Order</a>
+					<ul className="nav-items">
+						<li className="nav-list">
+							<a href="#Home" className="nav-link">
+								Home
+							</a>
+						</li>
+
+						<li className="nav-list">
+							<a href="#About" className="nav-link">
+								About
+							</a>
+						</li>
+
+						<li className="nav-list">
+							<a href="#menu" className="nav-link">
+								Menu
+							</a>
+						</li>
+
+						<li className="nav-list">
+							<a href="#Reservations" className="nav-link">
+								Reservations
+							</a>
+						</li>
+
+						<li className="nav-list">
+							<a href="#Order" className="nav-link">
+								Order
+							</a>
 						</li>
 					</ul>
 
 					<div>
-						<a href="#Login">Login</a>
+						<a href="#Login" className="btn">
+							Login
+						</a>
 					</div>
 
-					<div>
+					<div className="icon">
 						<BsCartFill />
 					</div>
 				</nav>
