@@ -2,7 +2,7 @@ import "./App.css";
 // import Header from "./component/Header";
 import Main from "./component/Main";
 import Nav from "./component/Nav";
-import Footer from "./component/Footer";
+// import Footer from "./component/Footer";
 
 function App() {
 	return (
@@ -10,7 +10,7 @@ function App() {
 			{/* <Header /> */}
 			<Nav />
 			<Main />
-			<Footer />
+			{/* <Footer /> */}
 		</>
 	);
 }

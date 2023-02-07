@@ -13,7 +13,7 @@ const Nav = () => {
 							<img
 								src={require("../images/logo.png")}
 								alt="little lemon logo "
-								srcset=""
+								srcSet=""
 								className="logo"
 							/>
 						</a>

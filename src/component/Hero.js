@@ -13,7 +13,7 @@ const Hero = () => {
 						Pastaranian-Our most popular pasta dish with a with a Mediterranean
 						twist. It is made out of the most delicious cheddar cheese flown
 						especially from Greece. Today, you can get it with a{" "}
-						<span classname="free">Free</span> soft drink of your choice.
+						<span className="free">Free</span> soft drink of your choice.
 						Perfect for lunch.{" "}
 					</p>
 					<a href="#Reserve a table" className="btn">
@@ -26,7 +26,7 @@ const Hero = () => {
 					<img
 						src={require("../images/pasta-3.jpg")}
 						alt=""
-						srcset=""
+						srcSet=""
 						className="hero-image"
 					/>
 				</div>
