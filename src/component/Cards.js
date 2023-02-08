@@ -32,7 +32,7 @@
 import img1 from "../images/pasta-0.jpg";
 import img2 from "../images/greek-salad.jpg";
 import img3 from "../images/pasta-7.jpeg";
-import img4 from "../images/grilled-fish-2.jpg";
+// import img4 from "../images/grilled-fish-2.jpg";
 
 const cards = [
 	{
@@ -59,13 +59,13 @@ const cards = [
 		price: " $16.99",
 	},
 
-	{
-		id: 4,
-		title: "Grilled Fish",
-		img: img4,
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-		price: "$20.99",
-	},
+	// {
+	// 	id: 4,
+	// 	title: "Grilled Fish",
+	// 	img: img4,
+	// 	description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+	// 	price: "$20.99",
+	// },
 ];
 
 /*key={card.id}*/
@@ -73,24 +73,35 @@ const cards = [
 
 const Cards = () => {
 	return (
-		<div>
-			{cards.map((card, id) => {
-				return (
-					// <div className="card-containers">
-						<div className="card-container">
-							<div className="card">
-								<div className="card-body">
-									<img src={card.img} alt="" className="card-image" />
-									<h3>{card.title}</h3>
-									<p>{card.description}</p>
-									<p>{card.price}</p>
+		<>
+			<section className="card-section">
+				<h3>Our Popular Dishes</h3>
+
+				<div className="row">
+					{cards.map((card, id) => {
+						return (
+							<div key={id}>
+								<div className="column">
+									<div className="single-card">
+										<div className="card">
+											<div className="card-content">
+												<img src={card.img} alt="" className="card-image" />
+												<h3>{card.title}</h3>
+												<p>{card.description}</p>
+												<p className="price">{card.price}</p>
+												<a href="#Reserve a table" className="btn">
+													Place An Order
+												</a>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-						</div>
-					// </div>
-				);
-			})}
-		</div>
+						);
+					})}
+				</div>
+			</section>
+		</>
 	);
 };
 

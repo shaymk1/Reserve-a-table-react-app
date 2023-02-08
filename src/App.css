@@ -134,6 +134,23 @@ p {
 	transition: all 0.5s;
 }
 
+.nav .btn-secondary{
+	display:inline-block;
+	background-color:transparent;
+	border:solid 2px var(--secondary-color);
+	padding: 15px 32px;
+	border-radius: 8px;
+	font-size: 10px;
+	color:var(--main-color);
+}
+
+.nav .btn-secondary:hover{
+	background-color:var(--main-color);
+	color:var(--white-color);
+	border:none;
+	transition: all 200ms ease-in;
+}
+
 .nav .icon {
 	width: 10px;
 	height: 10px;
@@ -190,7 +207,7 @@ p {
 	/* width: 200px;
 	height: 200px; */
 	/* overflow: hidden; */
-	border-radius: var(--border-radius);
+	border-radius:var(--border-radius);
 	margin-top: 60px;
 	/* padding-top: 60px; */
 	padding-right: 30px;
@@ -240,37 +257,54 @@ section h2 {
 
 /* cards */
 
-
-
-.card-container {
-	/* display: grid;
-	grid-template-columns: repeat (auto-fit, minmax(12rem, 16rem));
-	grid-auto-rows: 1fr;
-	gap: 2rem;
-	justify-content: center; */
+.card-section{
+	 /* padding-top: 3rem; */
+	width:l00vw;
+    padding-bottom: 1rem;
+    display: grid;
+    place-items: center;
 }
 
-.card {
-	overflow: hidden;
-	box-shadow: 0 2px 20px var(--light-gray);
-	border-radius: 5px;
-	display: flex;
-	flex-direction: column; 
-	justify-content: space-between;
-	cursor: pointer;
-	transition: transform 200ms ease-in;
-	 gap: 2rem; 
-	
-} 
 
-.card:hover {
-	transform: scale(1.02);
+.row{
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
-.card-image {
+.single-card{
+	width: 260px;
+    border-radius: 1rem;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 5%);
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.column{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.card-image{
 	height: 12rem;
 	width: 100%;
 	object-fit: cover;
+   border-radius:var(--border-radius);
+    transition: .3s;
+}
+
+.single-card:hover .card-image{
+    transform: scale(1.06);
+}
+
+.card-content{
+    padding: 25px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+ .card-content .price{
+	font-family: "Markazi Text", serif;
+	font-weight: bold;
 }
 
 .card-body h3 {
@@ -280,6 +314,44 @@ section h2 {
 .card-body p {
 	padding: 0 1rem;
 }
+
+/* .card-container {
+	padding: 20px;
+	margin: 20px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: (2px);
+	gap: 5px; */
+	/* display: grid;
+	grid-template-columns: repeat (auto-fit, minmax(12rem, 16rem));
+	grid-auto-rows: 1fr;
+	gap: 2rem;
+	justify-content: center; */
+
+
+/* .card {
+	overflow: hidden;
+	box-shadow: 0 2px 20px var(--light-gray);
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	cursor: pointer;
+	transition: transform 200ms ease-in;
+	gap: 2rem;
+} */
+
+/* .card:hover {
+	transform: scale(1.02);
+} */
+
+/* .card-image {
+	height: 12rem;
+	width: 100%;
+	object-fit: cover;
+} */
+
+
 
 /* .card-container {
 	max-width: 50%;

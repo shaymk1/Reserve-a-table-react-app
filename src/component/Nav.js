@@ -52,7 +52,7 @@ const Nav = () => {
 					</ul>
 
 					<div>
-						<a href="#Login" className="btn">
+						<a href="#Login" className="btn-secondary">
 							Login
 						</a>
 					</div>
