@@ -21,15 +21,15 @@ const Hero = () => {
 					</a>
 				</div>
 
-				<div>
+				{/* <div className="hero-image-container"> */}
 					{/* className="hero-image-container" */}
 					<img
-						src={require("../images/pasta-3.jpg")}
+						src={require("../images/pasta-6.jpeg")}
 						alt=""
 						srcSet=""
 						className="hero-image"
 					/>
-				</div>
+				{/* </div> */}
 				<div className="btn-container">
 					{/* <a href="#Login" className="btn-hero">
 						Reserve a table
