@@ -75,7 +75,9 @@ const Cards = () => {
 	return (
 		<>
 			<section className="card-section">
-				<h3>Our Popular Dishes</h3>
+				<div className="center">
+					<h3>Our Popular Dishes</h3>
+				</div>
 
 				<div className="row">
 					{cards.map((card, id) => {

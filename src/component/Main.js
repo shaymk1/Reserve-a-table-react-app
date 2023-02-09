@@ -2,6 +2,8 @@ import React from "react";
 import Hero from "./Hero";
 import Menu from "./Menu";
 import Cards from "./Cards";
+import Testimonials from "./Testimonials";
+import About from "./About";
 
 const Main = () => {
 	return (
@@ -10,6 +12,8 @@ const Main = () => {
 				<Hero />
 				<Menu />
 				<Cards />
+				<Testimonials/>
+				< About/>
 			</div>
 		</>
 	);

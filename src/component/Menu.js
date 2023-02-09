@@ -3,8 +3,8 @@ import React from "react";
 const Menu = () => {
 	return (
 		<>
-			<section>
-				<h2>Order For Delivery</h2>
+			<section className="menu">
+				<h2 className="title">Order For Delivery</h2>
 				<div id="menu-outer">
 					<div className="table">
 						<ul className="menu-items">
@@ -37,7 +37,6 @@ const Menu = () => {
 					</div>
 				</div>
 			</section>
-		
 		</>
 	);
 };
