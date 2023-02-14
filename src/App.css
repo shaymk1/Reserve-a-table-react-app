@@ -10,19 +10,39 @@
 
 /* global-styles */
 :root {
-	/* color */
+	/**
+   * colors
+   */
+
 	--main-color: #495e57;
 	--secondary-color: #f4ce14;
 	--primary-color: #927b07;
 	--tertiary-color: #faeb9e;
 	--white-color: #fff;
 	--light-gray: #d3d3d3;
-	/* border-radius */
+	/**
+   * border-radius
+   */
+	
 	--border-radius: 1em;
+
+	
+  /**
+   * transition
+   */
+
+  --transition-1: 0.25s ease;
+  --transition-2: 0.5s ease;
+}
+
+html{
+	scroll-behavior: smooth;
 }
 
 body {
 	font-family: "Karla", sans-serif, "Markazi Text", serif;
+	/* min-height:100vh; */
+	position:absolute;
 }
 
 a {
@@ -81,7 +101,7 @@ hr {
 
 /* nav */
 
-.nav {
+/* .nav {
 	width: 100vw;
 	height: 100px;
 	background-color: var(--white-color);
@@ -92,14 +112,14 @@ hr {
 	margin-right: 20px;
 	left: 0;
 	top: 0;
-}
+} */
 
-.logo {
+/* .logo {
 	height: 50px;
 	width: 150px;
-}
+} */
 
-.nav-items {
+/* .nav-items {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -109,25 +129,25 @@ hr {
 
 .nav-list {
 	align-text: center;
-}
+} */
 
-.nav-link {
+/* .nav-link {
 	color: var(--main-color);
 	font-size: 1.2rem;
 	display: inline-block;
 	font-weight: bold;
-}
+} */
 
-.nav-link::before {
+/* .nav-link::before {
 	content: "";
 	width: 0%;
 	height: 3px;
 	display: block;
 	background-color: var(--secondary-color);
 	margin-bottom: 10px;
-}
+} */
 
-.nav-link:hover::before {
+/* .nav-link:hover::before {
 	width: 100%;
 	transition: all 0.5s;
 }
@@ -135,9 +155,9 @@ hr {
 .nav-link:hover {
 	color: var(--primary-color);
 	transition: all 0.5s;
-}
+} */
 
-.nav .btn-secondary {
+/* .nav .btn-secondary {
 	display: inline-block;
 	background-color: transparent;
 	border: solid 2px var(--secondary-color);
@@ -145,20 +165,20 @@ hr {
 	border-radius: 8px;
 	font-size: 10px;
 	color: var(--main-color);
-}
+} */
 
-.nav .btn-secondary:hover {
+/* .nav .btn-secondary:hover {
 	background-color: var(--main-color);
 	color: var(--white-color);
 	border: none;
 	transition: all 200ms ease-in;
-}
+} */
 
-.nav .icon {
+/* .nav .icon {
 	width: 10px;
 	height: 10px;
 	padding-right: 5px;
-}
+} */
 
 /* //////////////////////////////////////////////// */
 

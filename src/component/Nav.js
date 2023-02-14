@@ -1,4 +1,4 @@
-import React from "react";
+
 // import Image from "../images/logo.png";
 // import ProfilePicture from "./Images/Profile_picture.jpeg";
 import { BsCartFill } from "react-icons/bs";

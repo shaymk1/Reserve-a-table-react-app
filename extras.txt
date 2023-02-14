@@ -1,0 +1,19 @@
+{/* <button className="nav-btn nav-close-btn">
+	<FaTimes />
+</button>;
+
+<button onClick={toggleNavItems} className="nav-btn nav-open-btn ">
+	<HiOutlineMenu size={25} />
+</button>; */}
+
+<BsCartFill className="cart" />
+
+// const [showNav, setShowNav] = useState(false);
+
+	// const toggleNavItems = () => {
+	// 	setShowNav(!showNav);
+	// };
+	// const navRef = useRef()
+	// const showNavbar = ()=>{
+	// 	navRef.current.classList.toggle("responsive_nav")
+	// }
