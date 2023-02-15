@@ -1,14 +1,14 @@
 import "./home.css"
 import {Outlet} from "react-router-dom"
-import Hero from "../hero/Hero"
-import Specials from "../specials/Specials";
-import Testimonials from "../testimonials/Testimonials";
-import About from "../about/About"
+import Hero from "../../component/hero/Hero"
+import Specials from "../../component/specials/Specials";
+import Testimonials from "../../component/testimonials/Testimonials";
+import About from "../../component/about/About"
 
 const Home =()=>{
     return (
         <div>
-            Gae
+           
             <Outlet/>
             <Hero/>
             <Specials/>

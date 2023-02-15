@@ -4,7 +4,11 @@ import "./App.css";
 // import Nav from "./component/Nav";
 
 //  import Menu from "./pages/Menu"
-import Home from "./component/Home/Home"
+ import Home from "./pages/home/Home"
+  import Menu from "./pages/menu/Menu";
+//    import Reservations from "./pages/reservations/Reservations";
+    import Order from "./pages/order/Order";
+	 import Error from "./pages/error/Error";
 import Navbar from "./component/navbar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Footer from "./component/Footer";
@@ -21,8 +25,12 @@ function App() {
 					{/* <Route path = "/" element = {<Navbar/>}/> */}
 					{/* <Route path = "/" element = {<Navbar/>}></Route> */}
 					{/* <Main /> */}
+
+					{/* Home */}
 					{/* <Menu/>  */}
-					{/* cdcdcd */}
+					{/* <Reservations/> */}
+					{/* <Order/> */}
+					{/* <Error/> */}
 				</Routes>
 				{/* <Footer /> */}
 			</BrowserRouter>
