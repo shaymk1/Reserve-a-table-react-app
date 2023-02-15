@@ -1,4 +1,3 @@
-
 nav{
     height:5rem;
     width: 100vw;
@@ -69,10 +68,12 @@ nav{
         background:transparent;
         font-size: 1.8rem;
         cursor:pointer;
+        
     }
 
     .nav__toggle-btn svg{
         color:var(--secondary-color);
+        
     }
 
    
