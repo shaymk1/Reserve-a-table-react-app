@@ -2,7 +2,10 @@ import "./App.css";
 // import Header from "./component/Header";
 // import Main from "./component/Main";
 // import Nav from "./component/Nav";
-import Navbar from "./component/Navbar/Navbar";
+
+//  import Menu from "./pages/Menu"
+import Home from "./component/Home/Home"
+import Navbar from "./component/navbar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 // import Footer from "./component/Footer";
 
@@ -17,8 +20,9 @@ function App() {
 					<Route></Route>
 					{/* <Route path = "/" element = {<Navbar/>}/> */}
 					{/* <Route path = "/" element = {<Navbar/>}></Route> */}
-						{/* <Main /> */}
-					
+					{/* <Main /> */}
+					{/* <Menu/>  */}
+					{/* cdcdcd */}
 				</Routes>
 				{/* <Footer /> */}
 			</BrowserRouter>

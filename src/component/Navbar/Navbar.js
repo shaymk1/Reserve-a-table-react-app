@@ -7,10 +7,7 @@ import logo from "../../../src/images/logo.png";
 // import {useState} from "react";
 import { navLinks } from "../../data";
 
-
-
 const Navbar = () => {
-	
 	return (
 		<>
 			<header>
@@ -26,7 +23,6 @@ const Navbar = () => {
 					</a>
 				</div>
 				<nav className="navbar">
-					
 					{navLinks.map((link) => {
 						const { id, page, path } = link;
 						return (
@@ -37,19 +33,15 @@ const Navbar = () => {
 							</ul>
 						);
 					})}
+
 					<div className="right-menu-container">
-						<a href="#Login" className="btn-secondary">
+						<button href="#Login" className="btn-secondary">
 							Login
-						</a>
-						
+						</button>
 					</div>
 				</nav>
-
-				
 			</header>
 		</>
 	);
 };
 export default Navbar;
-
-
