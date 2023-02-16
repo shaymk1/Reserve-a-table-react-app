@@ -2,6 +2,7 @@ import img1 from "./images/pasta-0.jpg";
 import img2 from "./images/greek-salad.jpg";
 import img3 from "./images/pasta-7.jpeg";
 import img4 from "./images/griled-fish.jpg";
+import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export const links = [
 	{
@@ -68,3 +69,28 @@ export const cards = [
 		price: " $20.99",
 	},
 ];
+
+
+export const social = [
+	{
+		id: 1,
+		url: "https://www.twitter.com",
+		icon: <FaFacebook />,
+	},
+	{
+		id: 2,
+		url: "https://www.twitter.com",
+		icon: <FaTwitter />,
+	},
+	{
+		id: 3,
+		url: "https://www.twitter.com",
+		icon: <FaLinkedin />,
+	},
+	{
+		id: 4,
+		url: "https://www.twitter.com",
+		icon: <FaBehance />,
+	},
+];
+

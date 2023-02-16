@@ -1,62 +1,63 @@
-import { Link, NavLink } from "react-router-dom";
-import logo from "../../../src/images/logo.png";
-import { FaTimes } from "react-icons/fa";
-// import { HiOutlineMenu } from "react-icons/hi";
-import { FaBars } from "react-icons/fa";
-import { useState } from "react";
-import { links } from "../../data";
+
 import "./navbar.css";
+import React, { useState, useRef, useEffect } from 'react';
+import { FaBars } from 'react-icons/fa';
+import { links, social } from '../../data';
+import logo from "../../../src/images/logo.png";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
-	const [isNavShowing, setIsNavShowing] = useState(false);
-	return (
-		<>
-			<nav>
-				<div className="container nav__container">
-					<Link to="/" className="logo">
-						<img
-							src={logo}
-							alt="little lemon logo "
-							srcSet=""
-							className="logo"
-						/>
-					</Link>
-					<ul
-						className={`nav__links ${isNavShowing ? "show__nav" : "hide__nav"}`}
-					>
-						{links.map((link) => {
-							const { id, page, path } = link;
-							return (
-								<li key={id}>
-									<NavLink
-										to={path}
-										className={({ isActive }) => (isActive ? "active-nav" : "")}
-										end
-									>
-										{page}
-									</NavLink>
-								</li>
-							);
-						})}
-					</ul>
-					{/* <a href="#Login" className="btn-secondary">
-						Login
-					</a> */}
-
-					<button
-						className="nav__toggle-btn"
-						onClick={() => setIsNavShowing(!isNavShowing)}
-					>
-						{isNavShowing ? <FaTimes /> : <FaBars />}
-						{/* */}
-					</button>
-				</div>
-
-				{/* <button className="">
-					<FaTimes size={25} />
-				</button> */}
-			</nav>
-		</>
-	);
+  const [showLinks, setShowLinks] = useState(false);
+  const linksContainerRef = useRef(null);
+  const linksRef = useRef(null);
+  const toggleLinks = () => {
+    setShowLinks(!showLinks);
+  };
+  useEffect(() => {
+    const linksHeight = linksRef.current.getBoundingClientRect().height;
+    if (showLinks) {
+      linksContainerRef.current.style.height = `${linksHeight}px`;
+    } else {
+      linksContainerRef.current.style.height = '0px';
+    }
+  }, [showLinks]);
+  return (
+    <nav>
+      <div className='nav-center'>
+        <div className='nav-header'>
+            <Link to="/" className="logo">
+                <img src={logo} className='logo' alt='logo' />
+            </Link>
+          
+          <button className='nav-toggle' onClick={toggleLinks}>
+            <FaBars />
+          </button>
+        </div>
+        <div className='links-container' ref={linksContainerRef}>
+          <ul className='links' ref={linksRef}>
+            {links.map((link) => {
+              const { id, home, path } = link;
+              return (
+                <li key={id}>
+                    <NavLink to={path}>{home}</NavLink>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+        <ul className='social-icons'>
+          {social.map((socialIcon) => {
+            const { id, url, icon } = socialIcon;
+            return (
+              <li key={id}>
+                <a href={url}>{icon}</a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </nav>
+  );
 };
+
 export default Navbar;
