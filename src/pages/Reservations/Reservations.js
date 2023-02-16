@@ -1,4 +1,4 @@
-import "./reservation.css"
+import "./reservations.css"
 
 
 const Reservations = ()=>{

@@ -31,6 +31,7 @@ const Navbar = () => {
 									<NavLink
 										to={path}
 										className={({ isActive }) => (isActive ? "active-nav" : "")}
+										end
 									>
 										{page}
 									</NavLink>

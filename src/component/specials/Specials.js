@@ -1,11 +1,14 @@
 import "./specials.css"
+import Cards from "../cards/Cards"
 
 const Specials = ()=>{
     return (
-        <div>
-            ke specials
-        </div>
-    )
+			<>
+				
+				<Cards/>
+				
+			</>
+		);
 }
 
 export default Specials
