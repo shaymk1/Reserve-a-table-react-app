@@ -6,7 +6,6 @@ const Hero = () => {
 	return (
 		<>
 			<section>
-				<div className = "wrapper-grid">
 				<div className="container hero__container">
 					<div className="hero-content">
 						<h1>
@@ -22,14 +21,16 @@ const Hero = () => {
 						<Link to="/reservations" className="btn">
 							Reserve A Table{" "}
 						</Link>
-						{/* <a href="#Reserve a table" className="btn">
-							Reserve A Table
-						</a> */}
+						
 					</div>
+
 					<div className="hero-image-container">
-						<img src={heroImg} alt="pasta on a plate with sea food and a fork and knife" className="hero-image" />
+						<img
+							src={heroImg}
+							alt="pasta on a plate with sea food and a fork and knife"
+							className="hero-image"
+						/>
 					</div>
-				</div>
 				</div>
 			</section>
 		</>
