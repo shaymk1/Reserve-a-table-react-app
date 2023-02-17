@@ -3,6 +3,7 @@ import img2 from "./images/greek-salad.jpg";
 import img3 from "./images/pasta-7.jpeg";
 import img4 from "./images/griled-fish.jpg";
 import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { CiLogin, CiShoppingCart } from "react-icons/ci";
 
 export const links = [
 	{
@@ -34,6 +35,8 @@ export const links = [
 		page: "Order",
 		path: "/order",
 	},
+
+	
 ];
 
 export const cards = [
@@ -69,6 +72,23 @@ export const cards = [
 		price: " $20.99",
 	},
 ];
+
+
+export const navIcons = [
+	{
+		id: 1,
+		icon: <CiLogin />,
+		url: "/login",
+		text: "Login",
+	},
+	{
+		id: 2,
+		icon: <CiShoppingCart />,
+		url: "/order",
+		text: "Cart",
+	},
+];
+
 
 
 export const social = [

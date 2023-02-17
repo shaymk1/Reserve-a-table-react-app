@@ -6,7 +6,7 @@ Navbar
 ===============
 */
 nav {
-  /* background: var(--white-color); */
+  background: var(--white-color); 
   box-shadow: var(--light-shadow);
 }
 .nav-header {
@@ -17,14 +17,14 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  /* color: var(--clr-primary-5); */
+  color: var(--secondary-color); 
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
-  /* color: var(--clr-primary-1); */
+  color: var(--red-color); 
   transform: rotate(90deg);
 }
 .logo {
@@ -40,11 +40,11 @@ nav {
   transition: var(--transition);
 }
 .links a:hover {
-  /* background: var(--clr-primary-8); */
-  /* color: var(--clr-primary-5); */
+   background: var(--red-color); 
+  color: var(--white-color); 
   padding-left: 1.5rem;
 }
-.social-icons {
+.nav-icons {
   display: none;
 }
 .links-container {
@@ -52,9 +52,26 @@ nav {
   overflow: hidden;
   transition: var(--transition);
 }
-.show-container {
-  height: 10rem;
+/* .show-container {
+ height: 12rem;
+
+} */
+
+.active-nav {
+	position: relative;
 }
+
+.active-nav::after {
+	content: "";
+	display: block;
+	width: 3rem;
+	height: 0.1rem;
+	background: var(--secondary-color);
+	position: absolute;
+	margin-top: 0.2rem;
+}
+
+/* media queires  (medium and small screens)  1024*/
 @media screen and (min-width: 800px) {
   .nav-center {
     max-width: 1170px;
@@ -83,16 +100,19 @@ nav {
   .links a:hover {
     padding: 0;
     background: transparent;
+    color: var(--red-color); 
   }
-  .social-icons {
+  .nav-icons {
     display: flex;
+    align-items: center;
+    justify-content:center;
   }
-  .social-icons a {
+  .nav-icons a {
     margin: 0 0.5rem;
-    /* color: var(--clr-primary-5); */
+    color: var(--main-color); 
     transition: var(--transition);
   }
-  .social-icons a:hover {
-    /* color: var(--clr-primary-7); */
+  .nav-icons a:hover {
+    color: var(--red-color); 
   }
 }

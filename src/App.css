@@ -23,8 +23,10 @@
 	--primary-color: #927b07;
 	--tertiary-color: #faeb9e;
 	--white-color: #fff;
+  --black-color: #000;
+  --red-color: hsl(360, 67%, 44%);
 	--light-gray: #d3d3d3;
-    --text-color:#001d38;
+  --text-color:#001d38;
 	/**
    * border-radius
    */
