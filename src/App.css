@@ -27,6 +27,8 @@
   --red-color: hsl(360, 67%, 44%);
 	--light-gray: #d3d3d3;
   --text-color:#001d38;
+   --text-color-2:#121619;
+  --background-color:#121619;
 	/**
    * border-radius
    */
@@ -54,7 +56,8 @@
    */
     
   --spacing: 0.1rem;
-  --border-radius: 0.25rem;
+  --border-radius-btn: 0.25rem;
+  --border-radius-img: 1rem;
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
