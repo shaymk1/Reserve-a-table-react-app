@@ -1,8 +1,15 @@
 
+section{
+	margin:0 auto;
+	
+}
 
+.title{
+	margin-bottom:4rem;
+}
 
 .card__container {
-	width: 80%; 
+	width: 90%; 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	justify-content: space-between;
@@ -14,7 +21,6 @@
 	
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	justify-content: space-between;
 	gap: 3rem;
 	align-items: center;
 	
@@ -22,7 +28,7 @@
 }
 
 .single-card {
-	width: 200px;
+	width: 260px;
 	border-radius: 1rem;
 	box-shadow: var(--dark-shadow);
 	margin-bottom: 30px;
@@ -45,14 +51,11 @@
 
 /* media queries */
 
-@media screen and (min-width: 800px) {
+/* @media screen and (min-width: 800px) {
 	
-	.container{
-		/* max-width: 1170px;
-        margin: 0 auto; */
-	}
+	
 	.cards {
-		/* width: 100px; */
+		
 		grid-template-columns:repeat (2,1fr);
 		justify-content: center;
 		align-items: center;
@@ -61,7 +64,7 @@
 	.single-card {
 		
 	}
-}
+} */
 
 @media screen and (max-width: 650px) {
 	
