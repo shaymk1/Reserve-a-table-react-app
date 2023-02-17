@@ -3,8 +3,10 @@ import "./testimonials.css"
 const Testimonials = ()=>{
 return (
 	<>
-		<div>Yebo testimonials</div>
-		
+		<hr></hr>
+		<section>
+			<h2 className="title">Testimonials</h2>
+		</section>
 	</>
 );
 }
