@@ -7,7 +7,7 @@ const Cards = () => {
 		<>
 			<hr></hr>
 			<section>
-				<h2 className="title">Order for delivery</h2>
+				<h2 >Order for delivery</h2>
 				<div className="container card__container">
 					<div className="cards">
 						{cards.map((card) => {

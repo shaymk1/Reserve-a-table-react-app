@@ -1,9 +1,14 @@
-import img1 from "./images/pasta-0.jpg";
-import img2 from "./images/greek-salad.jpg";
-import img3 from "./images/pasta-7.jpeg";
-import img4 from "./images/griled-fish.jpg";
+import imgPastaOne from "./images/pasta-0.jpg";
+import imgGreekSalad from "./images/greek-salad.jpg";
+import imgPastaTwo from "./images/pasta-7.jpeg";
+import imgGrilledFish from "./images/griled-fish.jpg";
 import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { CiLogin, CiShoppingCart } from "react-icons/ci";
+import personOne from "./images/person-1.jpg"
+import personTwo from "./images/person-6.jpg";
+import personThree from "./images/person-3.jpg"
+import personFour from "./images/person-4.jpg";
+
 
 export const links = [
 	{
@@ -43,32 +48,32 @@ export const cards = [
 	{
 		id: 1,
 		title: "Pasta",
-		img: img1,
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+		img: imgPastaOne,
+		description: "Our famous delicious pasta made with love",
 		price: "$18.99",
 	},
 
 	{
 		id: 2,
 		title: "Greek Salad",
-		img: img2,
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+		img: imgGreekSalad,
+		description: "Our Greek Salads are made fresh with organic vegetables and organic cheese from our special farm in the mountains. ",
 		price: "$5.99",
 	},
 
 	{
 		id: 3,
-		title: "Bruchetta-Pasta",
-		img: img3,
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+		title: "Organic-Pasta",
+		img: imgPastaTwo,
+		description: "Especially made with organic pasta and other organic ingredients",
 		price: " $16.99",
 	},
 
 	{
 		id: 4,
 		title: "Grilled Fish",
-		img: img4,
-		description: "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+		img: imgGrilledFish,
+		description: "Our daily catch fresh from the ocean with your favourite side dish.",
 		price: " $20.99",
 	},
 ];
@@ -113,4 +118,43 @@ export const social = [
 		icon: <FaBehance />,
 	},
 ];
+
+
+export const people = [
+	{
+		id: 1,
+		image: personOne,
+		name: "Peter Kekae",
+		title: "UX Designer",
+		quote:
+			"The Ubuntu hospitality they are famous for, really makes you feel at home",
+	},
+	{
+		id: 2,
+		image: personTwo,
+		name: "Thato Lekae",
+		title: "Digital Marketing Specialist",
+		quote:
+			"I love it here, they have the most awesome grilled salmon in the whole of Chicago",
+	},
+	{
+		id: 3,
+		image: personThree,
+		name: "Lerato Mokae",
+		title: "product designer",
+		quote:
+			"I love their organic pasta with organic tomatoes on top, delicious!",
+	},
+	{
+		id: 4,
+		image: personFour,
+		name: "Susan Andersen",
+		title: "Java Developer",
+		quote: "The atmosphere is very welcoming!",
+	},
+];
+
+// export default people;
+
+
 
