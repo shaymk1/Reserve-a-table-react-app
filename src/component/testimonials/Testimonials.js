@@ -15,18 +15,22 @@ const Testimonials = () => {
 			<section className="section">
 				<h2>Testimonials</h2>
 				<div className="container section__container">
-					{people.map((person, personIndex) => {
-						const { id, image, name, title, quote } = person;
-						return (
-							<div key={id}>
-								<img src={image} alt={name} className="person-img" />
-								<h4>{name}</h4>
-								<p className="title">{title}</p>
-								<p className="text">{quote}</p>
-								<FaQuoteRight className="icon" />
-							</div>
-						);
-					})}
+					<div className="cards">
+						{people.map((person, personIndex) => {
+							const { id, image, name, title, quote } = person;
+							return (
+								<div key={id} className="card">
+									<img src={image} alt={name} className="person-img" />
+									<h4 className="title">{name}</h4>
+									<p className="job">{title}</p>
+									<p className="text">{quote}</p>
+									<FaQuoteRight className="icon" />
+								</div>
+							);
+						})}
+					</div>
+
+
 				</div>
 			</section>
 		</>

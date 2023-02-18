@@ -1,8 +1,13 @@
-import "./footer/css"
+// import "./footer/css"
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
+		<>
+			<hr></hr>
+			<section className="section">
+				<h2>Footer</h2>
+			</section>
+		</>
+	);
 }
 export default Footer

@@ -71,6 +71,9 @@ section {
 }
 
 @media screen and (max-width: 650px) {
+	section h2{
+		margin-bottom:1rem;
+	}
 	.about__container {
 		grid-template-columns: 1fr;
 		justify-content: center;
@@ -104,8 +107,8 @@ section {
 		font-size: 1.2rem;
 	}
 
-	 p {
-		font-size: 0.9rem;
+	 .about-content-container p {
+		font-size: 0.7rem;
 	}
 
     .img-title{

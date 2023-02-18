@@ -11,7 +11,7 @@ const About = () => {
 		<>
 			<hr></hr>
 			<section>
-				<h2 className="title">About Us</h2>
+				<h2 >About Us</h2>
 
 				<div className="container about__container">
 					<div className="about-content-container">
