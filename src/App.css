@@ -28,7 +28,8 @@
 	--light-gray: #d3d3d3;
   --text-color:#001d38;
    --text-color-2:#121619;
-  --background-color:#121619;
+   --italic-color:#52796f;
+  --background-color:#f2e9e4;
 	/**
    * border-radius
    */
@@ -156,6 +157,7 @@ h1,h2,h3{
 
 h1{
     font-size:3rem;
+    font-weigth:bold;
 }
 h2{
     font-size:2rem;

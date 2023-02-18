@@ -34,6 +34,7 @@ section{
 	margin-bottom: 30px;
 	overflow: hidden;
 	padding: 2rem;
+	text-align: left;
 	
 }
 
@@ -72,10 +73,24 @@ section{
 	.cards {
 		grid-template-columns:1fr;
 		justify-content: center;
-		align-items: center;
+		align-items:center;
 	}
 
 	.single-card {
 		width: 260px;
+
+	}
+
+	
+	h1 {
+		font-size: 2rem;
+	}
+
+	h2 {
+		font-size: 1.2rem;
+	}
+
+	 p {
+		font-size: 0.9rem;
 	}
 }

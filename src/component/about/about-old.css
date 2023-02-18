@@ -39,6 +39,20 @@
 	/* max-width:50%;  */
 }
 
+
+/* .multiline-ellipsis {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3; /* start showing ellipsis when 3rd line is reached */
+  /* white-space: pre-wrap; 
+}  */
+/* .ellipse{
+  text-overflow: ellipsis; /* enables ellipsis */
+  /* white-space: nowrap; keeps the text in a single line */
+  /* overflow: hidden;   */
+/* }  */
+
 .overlap-1{
     width:200px;
     height:200px;

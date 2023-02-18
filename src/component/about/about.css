@@ -1,63 +1,114 @@
-
-section{
-    height:auto;
+section {
+	height: auto;
 }
-.about__container{
-    width: 90%;
+.about__container {
+	width: 90%;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	justify-content: space-between;
 	gap: 3rem;
 	align-items: center;
-    
 }
 
-.about-content-container{
-    /* align-items:left; */
+.sub-title {
+	color: var(--italic-color);
+    font-weight:bold;
 }
 
-
-.about-images-container{
-   
-    display:flex;
-    /* justify-content:space-between;   */
-    /* gap:rem;  */
-    /* align-items: center; */
-     /* padding:2rem;   */
-    margin-bottom: -5rem; 
-    height:220px;
-    overflow:hidden;
-    
+.about-content-container {
+	background: var(--white-color);
+	box-shadow: var(--dark-shadow);
+	padding: 2rem;
+	overflow: hidden;
+	text-align: left;
+	margin-top: 2rem;
 }
 
-.about-image-1{
-    height:50%;
-    width:100%;
-    padding-right:2rem;
+.about-content-container .italic {
+	font-style: italic;
+	color: var(--italic-color);
 }
 
-.about-image-2{
-    height:50%;
-    width:100%;
-    padding-right:2rem;
-    margin-left:2rem;
+.about-content-container:hover 
+ {
+	transform: scale(1.06);
+	transition: var(--transition);
+}
+
+.about-images-container {
+	display: flex;
+	margin-bottom: -2rem;
+	height: 200px;
+	overflow: hidden;
+	border: solid 2px var(--secondary-color);
+	padding: 2rem 0 0 2rem;
+    box-shadow: var(--dark-shadow);
+}
+
+.about-images-container:hover 
+ {
+	transform: scale(1.06);
+	transition: var(--transition);
+}
+
+.about-image-1 {
+	height: 50%;
+	width: 100%;
+	padding-right: 2rem;
+}
+
+.about-image-2 {
+	height: 50%;
+	width: 100%;
+	/* padding-right: 2rem; */
+	margin-left: 2rem;
+}
+
+.img-title{
+    font-size:0.9rem;
+    text-align:right;
+    color: var(--italic-color);
 }
 
 @media screen and (max-width: 650px) {
-	
-	
 	.about__container {
-		grid-template-columns:1fr;
+		grid-template-columns: 1fr;
 		justify-content: center;
 		align-items: center;
+       
 	}
 
-	.single-card {
-		width: 260px;
+    .about-content-container{
+        width:90%;
+    }
+
+	.about-images-container{
+       
+        width:80%;
+    }
+
+    .about-image-1{
+        width:80%;
+        padding-right: 1rem;
+    }
+
+     .about-image-2{
+        width:80%;
+    }
+
+	h1 {
+		font-size: 2rem;
 	}
+
+	h2 {
+		font-size: 1.2rem;
+	}
+
+	 p {
+		font-size: 0.9rem;
+	}
+
+    .img-title{
+        font-size: 0.7rem;
+    }
 }
-
-
-
-
-
