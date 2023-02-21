@@ -1,36 +1,112 @@
 import "./testimonials.css";
 
 import React from "react";
-//import { useState, useEffect } from "react";
-import {people} from "../../data";
+import { useState, useEffect } from "react";
+// import {humans} from "../../data";
 // import data from "../../data";
 import { FaQuoteRight } from "react-icons/fa";
+import { FiChevronRight, FiChevronLeft } from "react-icons/fi";
+import personOne from "../../images/person-1.jpg";
+import personTwo from "../../images/person-6.jpg";
+import personThree from "../../images/person-3.jpg";
+import personFour from "../../images/person-4.jpg";
+
+const humans = [
+	{
+		id: 1,
+		image: personOne,
+		name: "Peter Kekae",
+		title: "UX Designer",
+		quote:
+			"The Ubuntu hospitality they are famous for, really makes you feel at home",
+		alt: "a guy with a black fedora hat",
+	},
+	{
+		id: 2,
+		image: personTwo,
+		name: "Thato dekae",
+		title: "Digital Marketing Specialist",
+		quote:
+			"I love it here, they have the most awesome grilled salmon in the whole of Chicago",
+		alt: "a lady smiling with her eyes closed",
+	},
+	{
+		id: 3,
+		image: personThree,
+		name: "Lerato Mokae",
+		title: "product designer",
+		quote:
+			"I love their organic pasta with organic tomatoes on top, delicious!",
+		alt: "a guy with a black fedora hat",
+	},
+	{
+		id: 4,
+		image: personFour,
+		name: "Susan Andersen",
+		title: "Java Developer",
+		quote: "The atmosphere is very welcoming!",
+		alt: "a lady with an orange blouse looking sideways",
+	},
+];
+
+// export default people;
 
 const Testimonials = () => {
-	//const [people, setPeople] = useState(people);
-	// const[index,setIndex] = useState(0)
+	const [people, setPeople] = useState(humans);
+	const [index, setIndex] = useState(0);
+	 useEffect(() => {
+			const lastIndex = humans.length - 1;
+			if (index < 0) {
+				setIndex(lastIndex);
+			}
+			if (index > lastIndex) {
+				setIndex(0);
+			}
+		}, [index, people]);
+
+		useEffect(() => {
+			let slider = setInterval(() => {
+				setIndex(index + 1);
+			}, 5000);
+			return () => {
+				clearInterval(slider);
+			};
+		}, [index]);
 	return (
 		<>
 			<hr></hr>
-			<section className="section">
+			<section className="testimonials__section">
 				<h2>Testimonials</h2>
-				<div className="container section__container">
-					<div className="cards">
-						{people.map((person, personIndex) => {
-							const { id, image, name, title, quote } = person;
-							return (
-								<div key={id} className="card">
-									<img src={image} alt={name} className="person-img" />
-									<h4 className="title">{name}</h4>
-									<p className="job">{title}</p>
-									<p className="text">{quote}</p>
-									<FaQuoteRight className="icon" />
-								</div>
-							);
-						})}
-					</div>
+				<div className="section-center">
+					{humans.map((human, personIndex) => {
+						const { id, image, name, title, quote, alt } = human;
+						let position = "nextSlide";
+						if (personIndex === index) {
+							position = "activeSlide";
+						}
+						if (
+							personIndex === index - 1 ||
+							(index === 0 && personIndex === humans.length - 1)
+						) {
+							position = "lastSlide";
+						}
+						return (
+							<article key={id} className={position}>
+								<img src={image} alt={alt} className="person-img" />
+								<h4>{name}</h4>
+								<p className="job-title">{title}</p>
+								<p className="text">{quote}</p>
+								<FaQuoteRight className="icon" />
+							</article>
+						);
+					})}
+					<button className="prev" onClick={() => setIndex(index - 1)}>
+						<FiChevronLeft />
+					</button>
 
-
+					<button className="next" onClick={() => setIndex(index + 1)}>
+						<FiChevronRight />
+					</button>
 				</div>
 			</section>
 		</>

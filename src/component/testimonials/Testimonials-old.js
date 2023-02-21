@@ -68,6 +68,14 @@ const Testimonials = () => {
 					</button>
 				</div>
 			</section>
+
+			    <div class="card">
+        <div class="image">
+          <!--<img src="images/img1.jpg" alt="" /
+        </div>
+        <h2>Someone Name</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
+      </div>
 		</>
 	);
 };

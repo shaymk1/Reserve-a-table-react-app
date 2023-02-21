@@ -4,10 +4,10 @@ import imgPastaTwo from "./images/pasta-7.jpeg";
 import imgGrilledFish from "./images/griled-fish.jpg";
 import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import { CiLogin, CiShoppingCart } from "react-icons/ci";
-import personOne from "./images/person-1.jpg"
-import personTwo from "./images/person-6.jpg";
-import personThree from "./images/person-3.jpg"
-import personFour from "./images/person-4.jpg";
+// import personOne from "./images/person-1.jpg"
+// import personTwo from "./images/person-6.jpg";
+// import personThree from "./images/person-3.jpg"
+// import personFour from "./images/person-4.jpg";
 
 
 export const links = [
@@ -120,41 +120,41 @@ export const socials = [
 ];
 
 
-export const people = [
-	{
-		id: 1,
-		image: personOne,
-		name: "Peter Kekae",
-		title: "UX Designer",
-		quote:
-			"The Ubuntu hospitality they are famous for, really makes you feel at home",
-	},
-	{
-		id: 2,
-		image: personTwo,
-		name: "Thato Lekae",
-		title: "Digital Marketing Specialist",
-		quote:
-			"I love it here, they have the most awesome grilled salmon in the whole of Chicago",
-	},
-	{
-		id: 3,
-		image: personThree,
-		name: "Lerato Mokae",
-		title: "product designer",
-		quote:
-			"I love their organic pasta with organic tomatoes on top, delicious!",
-	},
-	{
-		id: 4,
-		image: personFour,
-		name: "Susan Andersen",
-		title: "Java Developer",
-		quote: "The atmosphere is very welcoming!",
-	},
-];
+// export const humans = [
+// 	{
+// 		id: 1,
+// 		image: personOne,
+// 		name: "Peter Kekae",
+// 		title: "UX Designer",
+// 		quote:
+// 			"The Ubuntu hospitality they are famous for, really makes you feel at home",
+// 	},
+// 	{
+// 		id: 2,
+// 		image: personTwo,
+// 		name: "Thato Lekae",
+// 		title: "Digital Marketing Specialist",
+// 		quote:
+// 			"I love it here, they have the most awesome grilled salmon in the whole of Chicago",
+// 	},
+// 	{
+// 		id: 3,
+// 		image: personThree,
+// 		name: "Lerato Mokae",
+// 		title: "product designer",
+// 		quote:
+// 			"I love their organic pasta with organic tomatoes on top, delicious!",
+// 	},
+// 	{
+// 		id: 4,
+// 		image: personFour,
+// 		name: "Susan Andersen",
+// 		title: "Java Developer",
+// 		quote: "The atmosphere is very welcoming!",
+// 	},
+// ];
 
-// export default people;
+// // export default people;
 
 
 

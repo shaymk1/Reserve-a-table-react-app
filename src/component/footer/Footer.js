@@ -1,4 +1,5 @@
-import "./footer.css";
+// import "./footer.css";
+import "./footer.css"
 import { links, socials } from "../../data";
 import { Link, NavLink } from "react-router-dom";
 
@@ -7,7 +8,7 @@ const Footer = () => {
 		<>
 			<hr></hr>
 			<section className="section">
-				<div className="footer">
+				<div className="container footer__container">
 					<div className="links-container">
 						<ul className="footer-links">
 							{links.map((link) => {
