@@ -13,6 +13,7 @@ section {
 .sub-title {
 	color: var(--italic-color);
     font-weight:bold;
+	font-size:1rem;
 }
 
 .about-content-container {

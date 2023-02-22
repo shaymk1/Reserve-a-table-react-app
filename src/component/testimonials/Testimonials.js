@@ -20,6 +20,7 @@ const humans = [
 		quote:
 			"The Ubuntu hospitality they are famous for, really makes you feel at home",
 		alt: "a guy with a black fedora hat",
+		areaLabel: "slide 1 of 4",
 	},
 	{
 		id: 2,
@@ -29,6 +30,7 @@ const humans = [
 		quote:
 			"I love it here, they have the most awesome grilled salmon in the whole of Chicago",
 		alt: "a lady smiling with her eyes closed",
+		areaLabel: "slide 2 of 4",
 	},
 	{
 		id: 3,
@@ -38,6 +40,7 @@ const humans = [
 		quote:
 			"I love their organic pasta with organic tomatoes on top, delicious!",
 		alt: "a guy with a black fedora hat",
+		areaLabel: "slide 3 of 4",
 	},
 	{
 		id: 4,
@@ -46,6 +49,7 @@ const humans = [
 		title: "Java Developer",
 		quote: "The atmosphere is very welcoming!",
 		alt: "a lady with an orange blouse looking sideways",
+		areaLabel: "slide 4 of 4",
 	},
 ];
 
@@ -75,11 +79,14 @@ const Testimonials = () => {
 	return (
 		<>
 			<hr></hr>
-			<section className="testimonials__section">
+			<section
+				className="testimonials__section"
+				aria-label="testimonial carousel"
+			>
 				<h2>Testimonials</h2>
 				<div className="section-center">
 					{humans.map((human, personIndex) => {
-						const { id, image, name, title, quote, alt } = human;
+						const { id, image, name, title, quote, alt, areaLabel } = human;
 						let position = "nextSlide";
 						if (personIndex === index) {
 							position = "activeSlide";
@@ -91,7 +98,12 @@ const Testimonials = () => {
 							position = "lastSlide";
 						}
 						return (
-							<article key={id} className={position}>
+							<article
+								key={id}
+								className={position}
+								area-label={areaLabel}
+								role="group"
+							>
 								<img src={image} alt={alt} className="person-img" />
 								<h4>{name}</h4>
 								<p className="job-title">{title}</p>
@@ -100,13 +112,30 @@ const Testimonials = () => {
 							</article>
 						);
 					})}
-					<button className="prev" onClick={() => setIndex(index - 1)}>
-						<FiChevronLeft />
+
+					<button
+						className="prev-group"
+						aria-current="true"
+						onClick={() => setIndex(index - 1)}
+					>
+						<span className="prev">
+							<FiChevronLeft />
+						</span>
+						{/* <span className="prev-text">prev</span> */}
 					</button>
 
-					<button className="next" onClick={() => setIndex(index + 1)}>
-						<FiChevronRight />
+
+					<button
+						className="next-group"
+						aria-hidden="true"
+						onClick={() => setIndex(index + 1)}
+					>
+						<span className="next">
+							<FiChevronRight />
+						</span>
+						{/* <span className="next-text">next</span> */}
 					</button>
+					
 				</div>
 			</section>
 		</>

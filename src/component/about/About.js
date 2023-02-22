@@ -15,7 +15,7 @@ const About = () => {
 
 				<div className="container about__container">
 					<div className="about-content-container">
-						<h4 className="sub-title">Our Humble Beginnings..</h4>
+						<h3 className="sub-title">Our Humble Beginnings..</h3>
 						<p>
 							The first Little Lemon restuarant opened it's doors in 2010 in
 							Cape Town, South Africa. It was a brain child of two best friends,

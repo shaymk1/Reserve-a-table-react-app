@@ -11,7 +11,7 @@ import Order from "./pages/order/Order";
 import Error from "./pages/error/Error";
 import Navbar from "./component/navbar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Footer from "./component/Footer";
+//import Footer from "./component/Footer";
 
 function App() {
 	return (
@@ -27,7 +27,7 @@ function App() {
 						<Route path="/error" element={<Error />}></Route>
 					</Route>
 				</Routes>
-				<Footer /> 
+				{/* <Footer />  */}
 			</BrowserRouter>
 		</>
 	);

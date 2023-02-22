@@ -2,7 +2,8 @@ import imgPastaOne from "./images/pasta-0.jpg";
 import imgGreekSalad from "./images/greek-salad.jpg";
 import imgPastaTwo from "./images/pasta-7.jpeg";
 import imgGrilledFish from "./images/griled-fish.jpg";
-import { FaBehance, FaFacebook, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaInstagramSquare, FaFacebook, FaTwitter } from "react-icons/fa";
+// import { AiFillInstagram } from "react-icons/ai";
 import { CiLogin, CiShoppingCart } from "react-icons/ci";
 // import personOne from "./images/person-1.jpg"
 // import personTwo from "./images/person-6.jpg";
@@ -110,12 +111,38 @@ export const socials = [
 	{
 		id: 3,
 		url: "https://www.twitter.com",
-		icon: <FaLinkedin />,
+		icon: <FaInstagramSquare />,
 	},
+	// {
+	// 	id: 4,
+	// 	url: "https://www.twitter.com",
+	// 	icon: <FaBehance />,
+	// },
+];
+
+export const legals = [
+	{
+		id: 1,
+		page: "Accessibility",
+		path: "/accessibility",
+	},
+
+	{
+		id: 2,
+		page: "Legal",
+		path: "/legal",
+	},
+
+	{
+		id: 3,
+		page: "FAQ",
+		path: "/faq",
+	},
+
 	{
 		id: 4,
-		url: "https://www.twitter.com",
-		icon: <FaBehance />,
+		page: "Download Our App",
+		path: "/googleplay",
 	},
 ];
 
