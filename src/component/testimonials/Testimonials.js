@@ -58,24 +58,24 @@ const humans = [
 const Testimonials = () => {
 	const [people, setPeople] = useState(humans);
 	const [index, setIndex] = useState(0);
-	 useEffect(() => {
-			const lastIndex = humans.length - 1;
-			if (index < 0) {
-				setIndex(lastIndex);
-			}
-			if (index > lastIndex) {
-				setIndex(0);
-			}
-		}, [index, people]);
+	useEffect(() => {
+		const lastIndex = humans.length - 1;
+		if (index < 0) {
+			setIndex(lastIndex);
+		}
+		if (index > lastIndex) {
+			setIndex(0);
+		}
+	}, [index, people]);
 
-		useEffect(() => {
-			let slider = setInterval(() => {
-				setIndex(index + 1);
-			}, 5000);
-			return () => {
-				clearInterval(slider);
-			};
-		}, [index]);
+	useEffect(() => {
+		let slider = setInterval(() => {
+			setIndex(index + 1);
+		}, 5000);
+		return () => {
+			clearInterval(slider);
+		};
+	}, [index]);
 	return (
 		<>
 			<hr></hr>
@@ -113,29 +113,13 @@ const Testimonials = () => {
 						);
 					})}
 
-					<button
-						className="prev-group"
-						aria-current="true"
-						onClick={() => setIndex(index - 1)}
-					>
-						<span className="prev">
-							<FiChevronLeft />
-						</span>
-						{/* <span className="prev-text">prev</span> */}
+					<button className="prev" onClick={() => setIndex(index - 1)}>
+						<FiChevronLeft />
 					</button>
 
-
-					<button
-						className="next-group"
-						aria-hidden="true"
-						onClick={() => setIndex(index + 1)}
-					>
-						<span className="next">
-							<FiChevronRight />
-						</span>
-						{/* <span className="next-text">next</span> */}
+					<button className="next" onClick={() => setIndex(index + 1)}>
+						<FiChevronRight />
 					</button>
-					
 				</div>
 			</section>
 		</>

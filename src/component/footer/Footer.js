@@ -1,42 +1,27 @@
 // import "./footer.css";
 import "./footer.css"
-import { links, socials,legals } from "../../data";
-import { Link, NavLink } from "react-router-dom";
+import { links, socials } from "../../data";
+import { Link} from "react-router-dom";
 import logo from "../../../src/images/logo-white.png";
 import {AiOutlineCopyrightCircle} from "react-icons/ai"
 
 const Footer = () => {
 	return (
 		<>
-			<hr></hr>
+			{/* <hr></hr> */}
 			<section className="footer__section">
-				<div className="container footer__container">
+				<div className=" footer__container">
 					<div className="footer-links-container">
 						<ul className="footer-links">
 							{links.map((link) => {
 								const { id, page, path } = link;
 								return (
 									<li key={id}>
-										<NavLink to={path}>{page}</NavLink>
+										<Link to={path}>{page}</Link>
 									</li>
 								);
 							})}
 						</ul>
-					</div>
-					<div className="legal-container">
-						<ul className="legal-links">
-							{
-						legals.map((legal)=>{
-							const { id, page, path } = legal;
-							return (
-								<li key={id}>
-									<NavLink to={path}>{page}</NavLink>
-								</li>
-							);
-						})
-						
-						
-						}</ul>
 					</div>
 
 					<div className="icons-container">
@@ -63,9 +48,10 @@ const Footer = () => {
 						</Link>
 					</div>
 				</div>
-				<small>
-					<AiOutlineCopyrightCircle /> all rights reserved <span>Little</span>
-					Lemon
+				<small className="copyright">
+					<AiOutlineCopyrightCircle /> all rights reserved{" "}
+					<span className="little">Little</span>
+					<span className="lemon">Lemon</span>
 				</small>
 			</section>
 		</>

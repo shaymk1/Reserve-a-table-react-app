@@ -139,11 +139,11 @@ export const legals = [
 		path: "/faq",
 	},
 
-	{
-		id: 4,
-		page: "Download Our App",
-		path: "/googleplay",
-	},
+	// {
+	// 	id: 4,
+	// 	page: "Download Our App",
+	// 	path: "/googleplay",
+	// },
 ];
 
 
