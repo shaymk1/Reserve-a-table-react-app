@@ -7,13 +7,13 @@ import React from "react";
 const Hero = () => {
 	return (
 		<>
-			<section>
-				<div className="container">
-					<h1>
+			<section className="hero__section">
+				<div className="container hero__container">
+					<h1 className="hero-title">
 						{" "}
 						Welcome to Little<span className="lemon"> Lemon</span> , Chicago
 					</h1>
-					<div className="header__content">
+					<div className="hero-content">
 						<div>
 							<p>
 								Pastaranian, our most popular pasta dish with a with a

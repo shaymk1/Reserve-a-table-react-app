@@ -1,8 +1,13 @@
-section {
-	height: auto;
+.about__section {
+	margin-top:-3rem;
+	/* margin-bottom:3rem;  */
+}
+.container{
+	
+	
 }
 .about__container {
-	width: 90%;
+	 width: 100%; 
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	justify-content: space-between;
@@ -10,19 +15,34 @@ section {
 	align-items: center;
 }
 
+.about-title{
+	margin-bottom: 2rem;
+}
+
 .sub-title {
 	color: var(--italic-color);
     font-weight:bold;
-	font-size:1rem;
+	font-size:1.2rem;
 }
 
-.about-content-container {
-	background: var(--white-color);
-	box-shadow: var(--dark-shadow);
+
+
+.about-content {
+	/* background: var(--white-color);
+	box-shadow: var(--dark-shadow); */
 	padding: 2rem;
 	overflow: hidden;
 	text-align: left;
 	margin-top: 2rem;
+	width:80%;
+	padding-left:2rem;
+	margin-left:2rem;
+	margin-bottom:2rem;
+	justify-content:center;
+}
+
+.about-content p{
+	font-size:0.9rem;
 }
 
 .about-content-container .italic {
@@ -30,39 +50,36 @@ section {
 	color: var(--italic-color);
 }
 
-.about-content-container:hover 
+/* .about-content-container:hover 
  {
 	transform: scale(1.06);
 	transition: var(--transition);
-}
+} */
 
 .about-images-container {
 	display: flex;
 	margin-bottom: -2rem;
 	height: 200px;
 	overflow: hidden;
-	border: solid 2px var(--secondary-color);
+	/* border: solid 2px var(--secondary-color); */
 	padding: 2rem 0 0 2rem;
-    box-shadow: var(--dark-shadow);
+
 }
 
-.about-images-container:hover 
- {
-	transform: scale(1.06);
-	transition: var(--transition);
-}
+
 
 .about-image-1 {
 	height: 50%;
 	width: 100%;
 	padding-right: 2rem;
+	object-fit:cover;
 }
 
 .about-image-2 {
 	height: 50%;
 	width: 100%;
-	/* padding-right: 2rem; */
 	margin-left: 2rem;
+	object-fit:cover;
 }
 
 .img-title{
@@ -76,14 +93,18 @@ section {
 		margin-bottom:1rem;
 	}
 	.about__container {
+		width:80%;
 		grid-template-columns: 1fr;
 		justify-content: center;
 		align-items: center;
        
 	}
 
-    .about-content-container{
-        width:90%;
+    .about-content{
+       
+		align-items: center;
+		place-content:center;
+		justify-content: center;
     }
 
 	.about-images-container{
@@ -91,14 +112,7 @@ section {
         width:80%;
     }
 
-    .about-image-1{
-        width:80%;
-        padding-right: 1rem;
-    }
-
-     .about-image-2{
-        width:80%;
-    }
+   
 
 	h1 {
 		font-size: 2rem;
@@ -106,6 +120,7 @@ section {
 
 	h2 {
 		font-size: 1.2rem;
+		/* margin-bottom:-5rem; */
 	}
 
 	 .about-content-container p {

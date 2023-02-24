@@ -9,7 +9,7 @@ const Footer = () => {
 	return (
 		<>
 			{/* <hr></hr> */}
-			<section className="footer__section">
+			<footer>
 				<div className=" footer__container">
 					<div className="footer-links-container">
 						<ul className="footer-links">
@@ -25,7 +25,7 @@ const Footer = () => {
 					</div>
 
 					<div className="icons-container">
-						<h4>Contact Us</h4>
+						{/* <h4>Contact Us</h4> */}
 						<ul className="footer-icons">
 							{socials.map((social) => {
 								const { id, text, url, icon } = social;
@@ -53,7 +53,7 @@ const Footer = () => {
 					<span className="little">Little</span>
 					<span className="lemon">Lemon</span>
 				</small>
-			</section>
+			</footer>
 		</>
 	);
 };

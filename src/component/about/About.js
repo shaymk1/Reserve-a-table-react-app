@@ -10,11 +10,11 @@ const About = () => {
 	return (
 		<>
 			<hr></hr>
-			<section>
-				<h2 >About Us</h2>
+			<section className="about__section">
+				<h2 className="about-title">About Us</h2>
 
 				<div className="container about__container">
-					<div className="about-content-container">
+					<div className="about-content">
 						<h3 className="sub-title">Our Humble Beginnings..</h3>
 						<p>
 							The first Little Lemon restuarant opened it's doors in 2010 in

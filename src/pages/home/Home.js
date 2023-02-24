@@ -1,5 +1,5 @@
 import "./home.css";
-import { Outlet } from "react-router-dom";
+//import { Outlet } from "react-router-dom";
 import Hero from "../../component/hero/Hero";
 import Footer from "../../component/footer/Footer";
 import Cards from "../../component/cards/Cards";
@@ -8,14 +8,13 @@ import About from "../../component/about/About";
 
 const Home = () => {
 	return (
-		<div>
-			<Outlet />
+		<div className="home">
+			{/* <Outlet /> */}
 			<Hero />
-			<About />
 			<Cards />
+			<About />
 			<Testimonials />
-			<Footer/> 
-			
+			<Footer />
 		</div>
 	);
 };

@@ -1,0 +1,132 @@
+.footer__section {
+	margin: 0 auto;
+	max-width: var(--max-width);
+	background-color: var(--main-color);
+	width: 100vw;
+	margin-bottom: 0;
+}
+
+
+.footer__container {
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 0 auto;
+	background-color: var(--main-color);
+	padding: 0 2rem;
+	margin-bottom: 0;
+}
+
+.footer-links-container {
+	/* margin-left: 0; */
+}
+
+.footer-links a {
+	color: var(--white-color);
+	font-size: 0.8rem;
+}
+
+.footer-links a:hover {
+	color: var(--secondary-color);
+}
+
+.footer-icons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 1rem;
+}
+
+.footer-icons a {
+	color: var(--white-color);
+}
+
+.footer-icons a:hover {
+	color: var(--secondary-color);
+	transition: var(--transition);
+}
+
+.icons-container h4 {
+	color: var(--white-color);
+	text-align: center;
+	font-size: 1rem;
+}
+
+.btn-and-logo {
+	display: flex;
+	flex-direction: column;
+	padding-right: 2rem;
+}
+
+.copyright {
+	color: var(--white-color);
+	font-size: 0.5rem;
+	
+}
+
+.copyright .lemon {
+	color: var(--secondary-color);
+	margin-left: 0.2rem;
+	font-weight: bold;
+}
+
+.copyright .little {
+	font-weight: bold;
+}
+
+/* media */
+
+@media screen and (min-width: 992px) {
+	.footer__section {
+		/* width: 95vw;  */
+		padding: 2rem;
+	}
+}
+
+@media (min-width: 800px) {
+	.footer__section {
+		/* width: 90vw;  */
+		margin: 5rem auto;
+		max-width: var(--max-width);
+		padding-right: 1rem;
+		margin-right: 2rem;
+	}
+
+	.footer-links a {
+		font-size: 0.7rem;
+	}
+
+	.icons-container h4 {
+		font-size: 0.9rem;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.footer__section {
+		/* width: 85vw; */
+		/* margin: 5rem auto; */
+
+		margin: 2rem;
+		padding: 2rem;
+	}
+
+	.footer__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 2rem;
+		padding: 2rem;
+	}
+
+
+	.btn-and-logo {
+		justify-content:center;
+	}
+}

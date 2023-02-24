@@ -50,7 +50,9 @@ export const cards = [
 		id: 1,
 		title: "Pasta",
 		img: imgPastaOne,
-		description: "Our famous delicious pasta made with love",
+		alt: "pasta with sea shells and tomatoes",
+		description:
+			"Our famous delicious pasta made with love using organic vegetables",
 		price: "$18.99",
 	},
 
@@ -58,7 +60,8 @@ export const cards = [
 		id: 2,
 		title: "Greek Salad",
 		img: imgGreekSalad,
-		description: "Our Greek Salads are made fresh with organic vegetables and organic cheese from our special farm in the mountains. ",
+		alt: "Greek salad with feta cheese and tomatoes",
+		description: "Our Greek Salads are made fresh with organic vegetables. ",
 		price: "$5.99",
 	},
 
@@ -66,7 +69,9 @@ export const cards = [
 		id: 3,
 		title: "Organic-Pasta",
 		img: imgPastaTwo,
-		description: "Especially made with organic pasta and other organic ingredients",
+		alt: "pasta with sea food and powder cheece",
+		description:
+			"Especially made with organic pasta and other organic ingredients",
 		price: " $16.99",
 	},
 
@@ -74,7 +79,9 @@ export const cards = [
 		id: 4,
 		title: "Grilled Fish",
 		img: imgGrilledFish,
-		description: "Our daily catch fresh from the ocean with your favourite side dish.",
+		alt: "Grilled Salmon with a side dish of rosseto",
+		description:
+			"Our daily catch fresh from the ocean with your favourite side dish.",
 		price: " $20.99",
 	},
 ];
