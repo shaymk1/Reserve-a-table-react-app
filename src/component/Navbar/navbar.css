@@ -2,7 +2,6 @@ nav {
   background: var(--white-color); 
   box-shadow: var(--light-shadow);
   
-  
 }
 .nav-header {
   display: flex;
@@ -34,6 +33,7 @@ nav {
   display: block;
   padding: 0.5rem 1rem;
   transition: var(--transition);
+  font-weight:bold;
 }
 .links a:hover {
    background: var(--red-color); 

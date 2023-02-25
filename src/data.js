@@ -10,12 +10,12 @@ import { CiLogin, CiShoppingCart } from "react-icons/ci";
 // import personThree from "./images/person-3.jpg"
 // import personFour from "./images/person-4.jpg";
 
-
 export const links = [
 	{
 		id: 1,
 		page: "Home",
 		path: "/",
+		alt: "home",
 	},
 
 	// {
@@ -28,21 +28,22 @@ export const links = [
 		id: 2,
 		page: "Menu",
 		path: "/menu",
+		alt: "menu",
 	},
 
 	{
 		id: 3,
 		page: "Reservation",
 		path: "/reservation",
+		alt: "reservation",
 	},
 
 	{
 		id: 4,
 		page: "Order",
 		path: "/order",
+		alt: "order,",
 	},
-
-	
 ];
 
 export const cards = [
@@ -86,39 +87,41 @@ export const cards = [
 	},
 ];
 
-
 export const navIcons = [
 	{
 		id: 1,
 		icon: <CiLogin />,
 		url: "/login",
 		text: "Login",
+		alt: "login button",
 	},
 	{
 		id: 2,
 		icon: <CiShoppingCart />,
 		url: "/order",
 		text: "Cart",
+		alt: "cart button",
 	},
 ];
-
-
 
 export const socials = [
 	{
 		id: 1,
-		url: "https://www.twitter.com",
+		url: "https://www.facebook.com",
 		icon: <FaFacebook />,
+		alt: "facebook website",
 	},
 	{
 		id: 2,
 		url: "https://www.twitter.com",
 		icon: <FaTwitter />,
+		alt: "twitter website",
 	},
 	{
 		id: 3,
-		url: "https://www.twitter.com",
+		url: "https://www.instagram.com",
 		icon: <FaInstagramSquare />,
+		alt: "instagram website",
 	},
 	// {
 	// 	id: 4,
@@ -152,7 +155,6 @@ export const legals = [
 	// 	path: "/googleplay",
 	// },
 ];
-
 
 // export const humans = [
 // 	{
@@ -189,6 +191,3 @@ export const legals = [
 // ];
 
 // // export default people;
-
-
-

@@ -1,113 +1,94 @@
-
-
-.hero__section{
-  height:auto;
+.hero__section {
+	/* height:auto; */
+	/* background-color:var(--main-color); */
 }
 
-.hero__container{
-
-}
-/* .hero {
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: left;
-  flex-direction: column;
- 
-  
-} */
-
-.container{
-  
-    margin:0 auto;
-    margin-bottom:-5rem;
-    overflow:hidden;
+.hero__container {
+	/* margin-top:-4rem; */
 }
 
-.hero-title{
-  margin-bottom:2rem;
+.container {
+	margin: 0 auto;
+	/* margin-bottom:-5rem; */
+	overflow: hidden;
+}
+
+.hero-title {
+	margin-bottom: 2rem;
+	margin-top: 0;
 }
 
 .hero-content {
-  display: grid;
+	display: grid;
 	grid-template-columns: 1fr 1fr;
 	justify-content: space-between;
 	gap: 3rem;
 	align-items: center;
-  width: auto;
-  text-align: left;
-  /* margin-left: 50px;  */
+	width: auto;
+	text-align: left;
+	/* margin-left: 50px;  */
 }
 
 h1 {
- 
-  font-size: 4rem;
-  font-weight: bold;
- 
+	font-size: 4rem;
+	font-weight: bold;
 }
 
-
-h1 .lemon{
-    color :var(--secondary-color);
+h1 .lemon {
+	/* color:#E48F02;  */
+	/* i used the more red color instead of yellow for contrast and accessibility */
+	color: var(--red-color);
 }
 
 p {
- 
-  font-size: 1rem;
-  
+	font-size: 1rem;
 }
 
-.price{
-    font-weight:bold;
+.price {
+	font-weight: bold;
 }
 
-.hero-img-container{
-  max-width: 100%;
+.hero-img-container {
+	max-width: 100%;
 	/* margin-bottom: -5rem;   */
 }
-
 
 .hero-img {
 	max-width: 100%;
 	height: 15rem;
-	 border-radius: var(--border-radius-img); 
+	border-radius: var(--border-radius-img);
 }
 
-.btn{
-    border:none;
-    margin-bottom: 30px;
+.btn {
+	border: none;
+	margin-bottom: 30px;
 }
 
-  .header__content p {
-    font-size: 0.9rem;
-  }
-    
-    /* media queries */
+.header__content p {
+	font-size: 0.9rem;
+}
 
-@media only screen and (max-width: 650px){
+/* media queries */
 
-  .home {
-    justify-content: center;
-    align-items: center;
-  }
- 
+@media only screen and (max-width: 650px) {
+	.home {
+		justify-content: center;
+		align-items: center;
+	}
 
-  .hero-content {
-    margin-left: 0px;
-    padding: 10px;
-    width: 80%; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-   
-  }
-
+	.hero-content {
+		margin-left: 0px;
+		padding: 10px;
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
 
 	h1 {
 		font-size: 2rem;
-    text-align:left;
+		text-align: left;
 	}
 
 	h2 {
@@ -117,5 +98,4 @@ p {
 	.hero-content p {
 		font-size: 0.7rem;
 	}
-
 }

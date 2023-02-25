@@ -19,7 +19,7 @@ const humans = [
 		title: "UX Designer",
 		quote:
 			"The Ubuntu hospitality they are famous for, really makes you feel at home",
-		alt: "a guy with a black fedora hat",
+		alt: "a white guy with a black fedora hat smiling",
 		areaLabel: "slide 1 of 4",
 	},
 	{
@@ -39,7 +39,7 @@ const humans = [
 		title: "product designer",
 		quote:
 			"I love their organic pasta with organic tomatoes on top, delicious!",
-		alt: "a guy with a black fedora hat",
+		alt: "a black guy with a black fedora hat looking up",
 		areaLabel: "slide 3 of 4",
 	},
 	{
@@ -107,7 +107,7 @@ const Testimonials = () => {
 								role="group"
 							>
 								<img src={image} alt={alt} className="person-img" />
-								<h4>{name}</h4>
+								<h3>{name}</h3>
 								<p className="job-title">{title}</p>
 								<p className="text">{quote}</p>
 								<FaQuoteRight className="icon" />
@@ -115,11 +115,19 @@ const Testimonials = () => {
 						);
 					})}
 
-					<button className="prev" onClick={() => setIndex(index - 1)}>
+					<button
+						aria-label="previous"
+						className="prev"
+						onClick={() => setIndex(index - 1)}
+					>
 						<FiChevronLeft />
 					</button>
 
-					<button className="next" onClick={() => setIndex(index + 1)}>
+					<button
+						aria-label="next"
+						className="next"
+						onClick={() => setIndex(index + 1)}
+					>
 						<FiChevronRight />
 					</button>
 				</div>

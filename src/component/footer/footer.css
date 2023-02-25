@@ -65,7 +65,8 @@ footer {
 
 small {
 	color: var(--white-color);
-	font-size: 0.5rem;
+	
+	font-size: 0.7rem;
 	margin-top: -2rem;
 	/* margin-left:2rem; */
 }

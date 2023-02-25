@@ -32,12 +32,13 @@ const Navbar = () => {
 			<div className="nav-center">
 				<div className="nav-header">
 					<Link to="/" className="logo">
-						<img src={logo} className="logo" alt="logo" />
+						<img src={logo} className="logo" alt="logo of Little Lemon restaurant" />
 					</Link>
 
 					<button
 						className="nav-toggle"
 						onClick={toggleLinks}
+						alt="icon to toggle the navbar menu on small screen devices"
 					>
 						<FaBars />
 					</button>
@@ -46,11 +47,12 @@ const Navbar = () => {
 				<div className="links-container" ref={linksContainerRef}>
 					<ul className="links" ref={linksRef}>
 						{links.map((link) => {
-							const { id, page, path } = link;
+							const { id, page, path,alt } = link;
 							return (
 								<li key={id}>
 									<NavLink
 										to={path}
+										alt={alt}
 										className={({ isActive }) => (isActive ? "active-nav" : "")}
 										end
 									>
@@ -63,11 +65,15 @@ const Navbar = () => {
 				</div>
 				<ul className="nav-icons">
 					{navIcons.map((navIcon) => {
-						const { id, text, url, icon } = navIcon;
+						const { id, text, url, icon,alt } = navIcon;
 						return (
 							<li key={id}>
-								<Link to={url}>{icon}</Link>
-								<Link to={url}>{text}</Link>
+								<Link to={url} alt={alt}>
+									{icon}
+								</Link>
+								<Link to={url} alt={alt}>
+									{text}
+								</Link>
 							</li>
 						);
 					})}

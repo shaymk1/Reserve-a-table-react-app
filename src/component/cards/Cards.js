@@ -19,7 +19,7 @@ const Cards = () => {
 									<h3>{title}</h3>
 									<p>{description}</p>
 									<p className="price">{price}</p>
-									<Link to="/order" className="btn">
+									<Link to="/order" className="btn" alt ="order">
 										Place Order{" "}
 									</Link>
 								</div>

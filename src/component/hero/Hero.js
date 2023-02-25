@@ -1,4 +1,4 @@
-import "./hero.css"
+import "./hero.css";
 import heroImg from "../../images/pasta-0.jpg";
 import { Link } from "react-router-dom";
 
@@ -9,9 +9,13 @@ const Hero = () => {
 		<>
 			<section className="hero__section">
 				<div className="container hero__container">
-					<h1 className="hero-title">
-						{" "}
-						Welcome to Little<span className="lemon"> Lemon</span> , Chicago
+					<h1 className="hero-title" labelledby="color">
+						Welcome to Little
+						<span className="lemon" id="color">
+							{" "}
+							Lemon
+						</span>{" "}
+						, Chicago
 					</h1>
 					<div className="hero-content">
 						<div>
@@ -24,7 +28,10 @@ const Hero = () => {
 
 							<p className="price"> $12.99</p>
 							<Link to="/menu">
-								<button className="btn"> Reserve a Table </button>
+								<button className="btn" alt="reserve a table">
+									{" "}
+									Reserve a Table{" "}
+								</button>
 							</Link>
 						</div>
 						<div className="hero-img-container">

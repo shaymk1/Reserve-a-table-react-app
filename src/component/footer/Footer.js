@@ -14,10 +14,12 @@ const Footer = () => {
 					<div className="footer-links-container">
 						<ul className="footer-links">
 							{links.map((link) => {
-								const { id, page, path } = link;
+								const { id, page, path, alt } = link;
 								return (
 									<li key={id}>
-										<Link to={path}>{page}</Link>
+										<Link to={path} alt={alt}>
+											{page}
+										</Link>
 									</li>
 								);
 							})}
@@ -28,11 +30,15 @@ const Footer = () => {
 						{/* <h4>Contact Us</h4> */}
 						<ul className="footer-icons">
 							{socials.map((social) => {
-								const { id, text, url, icon } = social;
+								const { id, text, url, icon, alt } = social;
 								return (
 									<li key={id}>
-										<Link to={url}>{icon}</Link>
-										<Link to={url}>{text}</Link>
+										<Link to={url} alt={alt}>
+											{icon}
+										</Link>
+										<Link to={url} alt={alt}>
+											{text}
+										</Link>
 									</li>
 								);
 							})}
@@ -44,7 +50,7 @@ const Footer = () => {
 							<img src={logo} className="logo" alt="logo" />
 						</Link>
 						<Link to="/menu">
-							<button className="btn"> Reserve a Table </button>
+							<button className="btn-primary"> Reserve a Table </button>
 						</Link>
 					</div>
 				</div>
