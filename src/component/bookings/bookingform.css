@@ -1,0 +1,223 @@
+
+
+
+
+
+
+
+
+
+
+/* BookingPage styling */
+.flexbox-booking-page {
+  background-color: #edefee;
+  display: flex;
+  justify-content: center;
+  padding-top: 8em;
+}
+
+/* BookingPage styling mobile*/
+@media (max-width: 767px) {
+  .flexbox-booking-page {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+}
+
+/* BookingForm styling */
+.flexbox-calendar-booking-form {
+  padding-right: 14em;
+  padding-top: 2em;
+}
+
+.flexbox-calendar-booking-form h1{
+  font-family: 'Markazi Text', serif;
+  font-weight: 400;
+  font-size: 40pt;
+  text-align: left;
+  margin: 0;
+  padding-bottom: 1em;
+}
+
+.flexbox-calendar-booking-form {
+  padding-right: 5em;
+  padding-top: 2em;
+}
+
+.flexbox-details-booking-form{
+ justify-content: flex-end;
+}
+
+.grid-details-booking-form{
+  font-family: 'Markazi Text', serif;
+  font-weight: 400;
+  font-size: 18pt;
+  display: grid;
+  width: 250px;
+  gap: 10px;
+  padding-left: 5em;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.grid-details-booking-form button{
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 12pt;
+  color: black;
+  text-align: center;
+  background: #f4ce14;
+  border-radius: 12px;
+  border: none;
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 30pt;
+}
+
+.grid-details-booking-form button:disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.grid-details-booking-form button:hover {background-color: #f4cf14b7}
+.grid-details-booking-form button:active {
+  background-color: #f4cf14b7;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.react-calendar {
+  font-family: 'Markazi Text', serif;
+  background-color: #edefee;
+  border-radius: 6px;
+  width: 400px;
+  font-weight: 600;
+  font-size: 14pt;
+  line-height: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+ }
+
+ .react-calendar__navigation {
+  display: flex;
+ }
+ .react-calendar__navigation button {
+  min-width: 50px;
+  font-family: 'Markazi Text', serif;
+  font-size: 18pt;
+  margin-top: 8px;
+  padding: 5px;
+  border: 0;
+ }
+
+ .react-calendar__navigation button:enabled:hover,
+ .react-calendar__navigation button:enabled:focus {
+  background-color: #edefee8e;
+ }
+
+ .react-calendar__tile{
+  font-family: 'Markazi Text', serif;
+  font-size: 18pt;
+  padding: 5px;
+  border: 0;
+ }
+
+ .react-calendar__tile:enabled:hover
+ .react-calendar__tile:enabled:focus {
+  background: #f4ce14;
+  border-radius: 6px;
+ }
+ .react-calendar__tile--now {
+  background: #f4cf1475;
+  border-radius: 6px;
+  font-weight: bold;
+ }
+ .react-calendar__tile--now:enabled:hover,
+ .react-calendar__tile--now:enabled:focus {
+  border-radius: 6px;
+  font-weight: bold;
+ }
+ .react-calendar__tile--hasActive:enabled:hover,
+ .react-calendar__tile--hasActive:enabled:focus {
+  background: #f4ce14;
+ }
+ .react-calendar__tile--active {
+  border-radius: 6px;
+  background: #f4ce14;
+  font-weight: bold;
+ }
+
+ .react-calendar__tile--active:enabled:hover,
+ .react-calendar__tile--active:enabled:focus {
+  background: #f4ce14;
+ }
+
+ /* BookingForm styling mobile*/
+@media (max-width: 767px) {
+  .flexbox-calendar-booking-form {
+    padding-right: 0;
+    padding-top: 2em;
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .react-calendar {
+    width: 100%;
+    font-size: 14pt;
+  }
+
+  .react-calendar__navigation button {
+    font-size: 14pt;
+  }
+
+  .flexbox-details-booking-form{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-details-booking-form {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding-left: 2em;
+  }
+}
+
+
+
+
+
+
+
+/* .form__section {
+	text-align: center;
+	margin: 0 auto;
+} */
+
+/* .form {
+   
+	display: grid;
+    justify-content:center;
+	max-width: 350px;
+	gap: 20px;
+	align-items: center;
+	margin: 0 auto;
+	box-shadow: var(--dark-shadow);
+	width: 100%;
+    margin-bottom:3rem;
+    margin-top:3rem;
+    background-color:var(--main-color);
+    color:var(--white-color);
+} */
+
+/* .res-date-label{
+    margin-top:2rem;
+} */
+
+/* form .btn{
+    padding-bottom:2rem;
+    
+} */
