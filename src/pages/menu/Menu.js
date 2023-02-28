@@ -1,11 +1,11 @@
-import "./menu.css"
+import "./menu.css";
+import Cards from "../../component/cards/Cards"
+const Menu = () => {
+	return (
+		<div>
+			<Cards/>
+		</div>
+	);
+};
 
-const Menu = ()=>{
-    return(
-        <div>
-            menu
-        </div>
-    )
-}
-
-export default Menu
+export default Menu;

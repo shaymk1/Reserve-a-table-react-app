@@ -33,9 +33,9 @@ export const links = [
 
 	{
 		id: 3,
-		page: "Reservation",
-		path: "/reservation",
-		alt: "reservation",
+		page: "Reservations",
+		path: "/reservations",
+		alt: "reservations",
 	},
 
 	{

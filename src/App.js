@@ -10,14 +10,16 @@ import Reservations from "./pages/reservations/Reservations";
 import Order from "./pages/order/Order";
 import Error from "./pages/error/Error";
 import Navbar from "./component/navbar/Navbar";
+//import Header from "./component/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-//import Footer from "./component/Footer";
+import Footer from "./component/footer/Footer";
 
 function App() {
 	return (
 		<>
 			<BrowserRouter>
 				<Navbar />
+				{/* <Header/>  */}
 				<Routes>
 					<Route>
 						<Route path="/" element={<Home />} />
@@ -27,7 +29,7 @@ function App() {
 						<Route path="/error" element={<Error />}></Route>
 					</Route>
 				</Routes>
-				{/* <Footer />  */}
+				<Footer />
 			</BrowserRouter>
 		</>
 	);
